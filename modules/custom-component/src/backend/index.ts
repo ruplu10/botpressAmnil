@@ -17,6 +17,8 @@ const botTemplates: sdk.BotTemplate[] = [
 ]
 
 const entryPoint: sdk.ModuleEntryPoint = {
+  onServerStarted,
+  onServerReady,
   botTemplates,
   definition: {
     name: 'custom-component',

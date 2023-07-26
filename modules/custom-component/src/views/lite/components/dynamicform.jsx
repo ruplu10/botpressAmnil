@@ -8,6 +8,7 @@ export const DynamicForm = props => {
     e.preventDefault()
     if (fields.length > 0) {
       const confirm = window.confirm(`This would be sent to the configured endpoint: ${props.endpoint}`)
+      console.log('confirm', confirm)
       if (confirm) {
         await props.bp.axios.post('/mod/custom-component/test-end-point', {
           endpoint: props.endpoint,

@@ -5,6 +5,7 @@ export { DropdownMenu } from './components/DropdownMenu'
 
 // Display a basic login form
 export { LoginForm } from './components/LoginForm'
+export { DynamicForm } from './components/DynamicForm'
 
 // This is an example on how to replace the webchat composer (the typing zone)
 export { Composer } from './components/Composer'

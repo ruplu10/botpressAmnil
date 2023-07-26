@@ -18,8 +18,9 @@ export default async (bp: typeof sdk) => {
   router.post('/test-end-point', async (req, res) => {
     const { botId } = req.params
     const { endpoint, inputValues } = req.body
-
     const config = (await bp.config.mergeBotConfig(botId, {})).form_header
+    console.log('config', config)
+
     try {
       await axios.post(
         endpoint,
